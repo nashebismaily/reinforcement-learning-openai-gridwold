@@ -1,3 +1,12 @@
+# this class contains the definition of a node for the gridworld problem
+# a node --
+#   1. knows where it is
+#   2. has a value, that can be updated
+#   3. knows if it is a terminal node
+#   4. knows if it is a barrier node
+#   5. knows what rewards are available for taking an action (left, right, up, down) 
+#      - Reward is None if action is invalid
+
 class Node:
     """GridWorld Node"""
     
@@ -10,7 +19,8 @@ class Node:
         self.right = None       # immediate reward for right, None if invalid    
         self.down = None        # immediate reward for down, None if invalid
         self.up = None          # immediate reward for up, None if invalid
-        
+    
+    # setters and getters for node values
     def set_state(self,state):
         self.state = state
     def get_state(self):

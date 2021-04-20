@@ -48,7 +48,6 @@ def create_negative_grid(rewards=-0.1):
             gw.set_value((i, j), 0)
     return gw
  
-
 def create_custom_grid_1(rewards=0.0):
     M = 4  # number of rows
     N = 4  # number of columns
@@ -101,6 +100,34 @@ def create_custom_grid_2(rewards=0.0):
  
     
     
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
  
  
 

@@ -118,7 +118,7 @@ class Grid:
         # right, top corner
         i = self.M-1
         j = self.N-1
-        self.grid[i][j].set_right(reward)
+        self.grid[i][j].set_left(reward)
         self.grid[i][j].set_down(reward)
         
     def is_valid_node_index(self,i,j):
@@ -167,7 +167,7 @@ class Grid:
         i, j = state[0], state[1]
         # set terminal flag to True
         self.grid[i][j].set_is_terminal(True)
-        # set reward from terminal state to zero
+        # set reward from terminal state to None
         self.set_reward(state,'left',None)
         self.set_reward(state,'right',None)
         self.set_reward(state,'down',None)
